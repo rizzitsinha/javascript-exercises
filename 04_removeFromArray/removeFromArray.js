@@ -5,14 +5,14 @@ const removeFromArray = function(array, ...numbers) {
         let i = 0;
         for(const integer of inputArray){
             if(integer === num){
-                removeNumArray.push(i);
+                inputArray.splice(i, 1);
             }
             i++;
         }
     }
-    for(const j of removeNumArray){
-        inputArray.splice(j, 1);
-    }
+    // for(const j of removeNumArray){
+    //     inputArray.splice(j, 1);
+    // }
     return inputArray;
 }
 // Do not edit below this line
